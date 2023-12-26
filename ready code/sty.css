@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    max-width: 1220px;
+    padding-inline: 60px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-inline: auto;
+
+    background-color: yellowgreen;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    height: 100px;
+    background-color: tomato;
+}
+
+.search {
+    width: 100%;
+    max-width: 625px;
+
+    background-color: rgb(19, 83, 156);
+    height: 60px;
+}
+
+.user {
+    flex-shrink: 0;
+
+    background-color: aquamarine;
+    height: 60px;
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+
+.promoEl {
+    height: 300px;
+    background-color: blueviolet;
+}
+
+.mostWatched {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.mostWatchedEl {
+    height: 200px;
+    background-color: brown;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 200px;
+    height: 100vh;
+
+    background-color: cadetblue;
+}
+
+.app {
+    display: flex;
+}
+
+@media (max-width: 1400px) {
+    .sidebar {
+        display: none;
+        width: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mostWatched {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .promo {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .mostWatched {
+        grid-template-columns: 1fr 1fr;
+    }
+    .promo {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mostWatched {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* END SIDEBAR */
