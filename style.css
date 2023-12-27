@@ -7,6 +7,7 @@
   font-size: 16px;
 }
 
+
 body
 {
   transition: background-color 1s, color 0.5s;
@@ -25,11 +26,26 @@ body
   --clr7: #6C5ECF;
   --clr8: grey;
   --clr9: #24273081;
-  --clr10: #242730;
-  --clr11: #B7B9D2;
-  --clr12: green;
+  --clr10:#242730;
+  --clr11:#B7B9D2;
+  --clr12:green;
 }
 
+.ligththeme
+{
+  --clr1: #ffffff;
+  --clr2: #141414; 
+  --clr3: #020202;
+  --clr4: #4e4a4a;
+  --clr5: #27262d;
+  --clr6: #FF7551;
+  --clr7: #8679e5;
+  --clr8: grey;
+  --clr9: #50556481;
+  --clr10:#74767b;
+  --clr11:#B7B9D2;
+  --clr12:green;
+} 
 
 .page
 {
@@ -297,7 +313,7 @@ body
   
   .discover{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
   }
 
@@ -363,7 +379,7 @@ body
     position: absolute;
     background-color: var(--clr9);
     width: 3em;
-    bottom: 1em;
+    bottom: 4em;
     right: 1em;
     text-align: center;
     border-radius: 5px;
@@ -412,7 +428,7 @@ body
   .mostWatched
   {
     display: grid;
-    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 17px;
   }
 
@@ -550,6 +566,12 @@ body
   
   @media screen and (max-width: 800px) 
   {
+    .duration__text {
+      top: 70px;
+    }
+    .header__profile {
+      position: relative;
+    }
     .sidebar
     {
       display: none;
@@ -577,7 +599,7 @@ body
 
     .card_1
     {
-      width: 700px;
+      width: 117%;
     }
 
     .card_2
@@ -586,7 +608,7 @@ body
       display: block;
       position: relative;
       color: var(--clr3);
-      width: 700px;
+      width: 117%;
       height: 364px;
       border-radius: 20px;
     }
@@ -615,5 +637,3 @@ body
       grid-column-start: 2;
     }
   }
-
-
